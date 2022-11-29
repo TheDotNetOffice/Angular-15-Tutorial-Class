@@ -1,0 +1,19 @@
+
+This is my First Angular 15 application
+
+<hr>
+
+<input type="radio" name="radio1" (click)="Onchange(true)">True
+<input type="radio" name="radio1" (click)="Onchange(false)">False
+
+<hr>
+<div *ngIf="IsVisible ; then thenBlock ; else elseBlock"></div>
+
+
+<ng-template #thenBlock>
+  This is True Radio button clicked -- then block
+</ng-template>
+
+<ng-template #elseBlock>
+    This is False Radio button clicked -- else block
+  </ng-template>
