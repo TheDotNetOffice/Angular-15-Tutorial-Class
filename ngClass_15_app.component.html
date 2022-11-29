@@ -1,0 +1,16 @@
+This is {{title}}
+
+<hr>
+
+<p [ngClass] = "['color1' ]"> Using ngClass as string</p>
+
+<div *ngFor = "let item of StudentDetails" [ngClass] = "['color2']">
+
+    {{item.Name}}
+</div>
+
+<h3 [ngClass] = "{ 'color1' : true, 'color2' : false}">using ngClass with onject</h3>
+
+<div [ngClass] = "GetCssClass('main1')">
+ using ngClass as a method calling
+</div>
