@@ -1,0 +1,26 @@
+This is {{title}}
+
+<hr>
+
+<select (change)="SetColor($event)">
+    <option value="">-- Select Color</option>
+    <option value="R">Red</option>
+    <option value="G">Green</option>
+    <option value="B">Blue</option>
+    <option value="D">Default Color</option>
+</select>
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'R'">
+        <h3 style="color: red;"> This is Red color</h3>
+    </div>
+    <div *ngSwitchCase="'G'">
+        <h3 style="color: green;"> This is Green color</h3>
+    </div>
+    <div *ngSwitchCase="'B'">
+        <h3 style="color: blue;"> This is Blue color</h3>
+    </div>
+    <div *ngSwitchDefault>
+        <h3 > This is default color</h3>
+    </div>
+</div>
