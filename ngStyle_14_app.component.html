@@ -1,0 +1,19 @@
+This is {{title}}
+
+<hr>
+
+<ul *ngFor="let item of StudentDetails">
+
+    <div [ngStyle]="{'color' :item.Age > 18 ? 'red' :'green'}">
+        {{item.Name}} Age is --> {{item.Age}}
+    </div>
+</ul>
+
+<h3>We are working  with ngStyle with a function</h3>
+
+<ul *ngFor="let item of StudentDetails">
+
+    <div [ngStyle]="{'color' : GetAge(item.Age)}">
+        {{item.Name}} Age is --> {{item.Age}}
+    </div>
+</ul>
