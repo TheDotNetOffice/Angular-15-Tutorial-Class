@@ -1,0 +1,16 @@
+This is {{title}}
+
+<hr>
+<table border="1">
+
+    <tr *ngFor="let item of StudentDetails ; let i = index ; let f = first ; let l = last ; let o = odd ; let e = even">
+        <td>{{i+1}}</td>
+        <td>{{item.Name}}</td>
+        <td>{{item.Age}}</td>
+        <td>{{item.Gender}}</td>
+        <td>{{f}}</td>
+        <td>{{l}}</td>
+        <td>{{o}}</td>
+        <td>{{e}}</td>
+    </tr>
+</table>
