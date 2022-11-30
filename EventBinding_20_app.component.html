@@ -1,0 +1,15 @@
+This is {{title}}
+<hr>
+
+<button (click) = "ShowAlert()">  Show alert msg </button>
+
+<button (click) = "ShowSum()">  Show Sum Of num </button>
+<p>Sum is {{sum}}</p>
+
+<select (change)="SetColor($event)">
+    <option value="">-- Select Color</option>
+    <option value="R">Red</option>
+    <option value="G">Green</option>
+    <option value="B">Blue</option>
+    <option value="D">Default Color</option>
+</select>
