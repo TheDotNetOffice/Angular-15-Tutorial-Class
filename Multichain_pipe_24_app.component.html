@@ -1,0 +1,12 @@
+This is {{title}}
+<hr>
+
+{{DOB}} <br>  short date is {{DOB | date : "short" : 'm/d/yy'}}
+<br>
+{{Salary | currency : 'USD' : true}}
+<br>
+<h3>Upper case</h3> {{title | uppercase}} <br>
+<h3>Lower case</h3> {{title | lowercase}} <br>
+<h3>Title case</h3> {{title | titlecase}} <br>
+<h3>Slice case startindex</h3> {{title | slice :2}} <br>
+<h3>slice case start and end case</h3> {{title | slice :2 :5}} <br>
