@@ -1,0 +1,9 @@
+This is {{title}}
+<hr>
+
+Enter Name : <input [value] = 'name1' (input) = 'name1 = $any($event.target).value'><br/>
+Your updated name is <p style="color: red;">{{name1}}</p>
+
+<hr>
+<input [(ngModel)] ='name2'>
+Your updated name is using ngModel <p style="color: red;">{{name2}}</p>
