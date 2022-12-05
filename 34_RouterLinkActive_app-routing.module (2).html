@@ -1,0 +1,12 @@
+<div class="topnav">
+<ul >
+    <li routerLinkActive="active"><a [routerLink]="['Home']"  >Home</a></li>
+    <li [routerLinkActive] = "'active'"><a  routerLink="student">Student</a></li>
+    <li [routerLinkActive] = "'active'"><a  [routerLink]="['/teacher']">Teacher</a></li>
+    <li [routerLinkActive] = "'active'"><a  [routerLink]="['ContactUs']">Contact Us</a></li>
+</ul>
+</div>
+
+<div class="container">
+   <router-outlet></router-outlet>
+  </div>
