@@ -1,0 +1,23 @@
+<h3>Student List</h3>
+
+<div class="card-deck1">
+    <div class="grid-container card m-8" style="min-width: 18rem; max-width:30.5%;" *ngFor="let student of Studentinfo ;let i= index">
+
+       <div class="card-header">
+            <h3>{{student.firstName}} {{student.lastName}}</h3>
+        </div>
+       
+        <img class=" grid-item card-img-top imageThumbnail" style="max-width: 100px; max-height: 62px;" src="{{student.Images}}" />
+       
+        <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary m-1" style="margin-top: 28px; " routerLink="/student/studentDetails/{{student.userId}}">View</a>
+
+            <a href="#" class="btn btn-primary m-1" style="margin-top: 28px; " routerLink="/student/studentDetails/{{student.userId}}" [queryParams] = "{edit:true}">Edit</a>
+
+            <a href="#" class="btn btn-danger m-1" style="margin-top: 28px; ">Delete</a>
+        </div>
+
+      
+    </div>
+    
+</div>
