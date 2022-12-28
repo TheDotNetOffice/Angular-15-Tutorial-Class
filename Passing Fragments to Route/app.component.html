@@ -1,0 +1,21 @@
+<div class="topnav">
+    <ul>
+        <!-- <li [routerLinkActive] = "'active'" [routerLinkActiveOptions] = "{exact:true}"><a routerLink="Home">Home</a></li>
+        <li [routerLinkActive] = "'active'"><a [routerLink]="'student'">Student</a></li>
+        <li [routerLinkActive] = "'active'"><a [routerLink]="['teacher']">Teacher</a></li>
+        <li [routerLinkActive] = "'active'"><a [routerLink]="['/ContactUs']">Contact Us</a></li> -->
+
+        <li [routerLinkActive] = "'active'" [routerLinkActiveOptions] = "{exact:true}"><a routerLink="" fragment="Home"> Home</a></li>
+        <li [routerLinkActive] = "'active'"><a routerLink="" fragment="student">Student</a></li>
+        <li [routerLinkActive] = "'active'"><a routerLink="" fragment="teacher">Teacher</a></li>
+        <li [routerLinkActive] = "'active'"><a routerLink="" fragment="contact">Contact Us</a></li>
+    </ul>
+</div>
+
+<div class="container">
+<app-home id="Home"></app-home>
+<app-student id="student"></app-student>
+<app-teacher id="teacher"></app-teacher>
+<app-contact-us id="contact"></app-contact-us>
+    <!-- <router-outlet></router-outlet> -->
+</div> 
