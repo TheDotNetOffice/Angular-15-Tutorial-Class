@@ -1,0 +1,18 @@
+<h2 style="text-align:center">Student details</h2>
+
+<div class="card">
+  <img src="{{details.Images}}" alt="Dotnetoffice" style="width:100%">
+  <h1>{{details.firstName}} {{details.lastName}}</h1>
+  <p class="title">Age : {{details.Age}}</p>
+  <p>Gender : {{details.Gender}}</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 	
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+  </div>
+  <p><button>Contact Me</button></p>
+   <p>Email Id: {{details.emailAddress}}</p>
+    <p>phoneNumber : {{details.phoneNumber}}</p>
+   
+    <a [routerLink]="['/student/studentDetails',1]">Go to the page</a>
+</div>
